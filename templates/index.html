@@ -1,0 +1,31 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+  <style type="text/css">
+      html, body {
+          height:100%;
+      }
+      #container {
+          height: 100%;
+          padding: 1em;
+      }
+      iframe {
+          width: 100%;
+          height: 100%;
+          border:1px solid #CCC;
+      }
+      input.url { width: 90%; }
+  </style>
+  </head>
+  <body>
+    <form action="browse" method="GET">
+      <input type="search" name="url" value="{{value}}" placeholder="URL" class="url">
+      <input type="submit" value="Done">
+    </form>
+    <iframe srcdoc="{{scraping}}">
+    </iframe>
+  </body>
+</html>
+
+
