@@ -20,12 +20,15 @@
   </head>
   <body>
     <form action="browse" method="GET">
-      <input type="search" name="url" value="{{value}}" placeholder="URL" class="url">
+      <input type="search" name="url" value="{{value}}" placeholder="URL" class="url" id="url">
       <input type="submit" value="Done">
     </form>
     <iframe srcdoc="{{scraping}}">
     </iframe>
   </body>
+  <script type="text/javascript">
+    document.getElementById('url').focus();
+  </script>
 </html>
 
 
